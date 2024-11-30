@@ -1,12 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fce0e0;
+    font-family: "young serif", "serif";
+    background-color: hsl(30, 54%, 90%);
 }
 
 main {
@@ -27,7 +24,109 @@ main {
     font-weight: 500;
 }
 
-.content p {
-    font-size: 1.2rem;
+.content p,
+.nutrition p {
+    font-size: 16px;
     margin-bottom: 40px;
+}
+
+.details {
+    background-color: hsl(330, 100%, 98%);
+    padding: 15px 25px;
+    border-radius: 10px;
+
+}
+
+ul,
+li {
+    line-height: 30px;
+}
+
+.details h4 {
+    color: hsl(332, 51%, 32%);
+    font-size: larger;
+    margin-bottom: 2px;
+}
+
+.ingredients h4,
+.instructions h4,
+.nutrition h4 {
+    color: hsl(14, 45%, 36%);
+    font-size: xx-large;
+    margin-bottom: 3px;
+}
+
+li {
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+li::marker,
+ol::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+hr {
+    border: 1px solid hsl(30, 54%, 90%);
+    margin: 50px 0;
+}
+
+table {
+    width: 100%;
+}
+
+table,
+tr,
+td {
+    border-collapse: collapse;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding: 15px 30px;
+    text-align: left;
+}
+
+td:last-child {
+    font-weight: bold;
+    color: hsl(14, 45%, 36%);
+}
+
+.attribution {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+@media only screen and (max-width: 700px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    main {
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .main-image img {
+        border-radius: 0;
+    }
+
+    .main-image {
+        margin-top: -34px;
+        margin-left: -34px;
+        margin-right: -34px;
+
+    }
+
+    P,
+    ul,
+    ol {
+        line-height: 30px;
+    }
+
+
 }

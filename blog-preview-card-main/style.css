@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+@font-face {
+
+    font-family: 'myfont';
+
+    src: url(/blog-preview-card-main/assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+    /* Path to your font file */
+
+}
+
+
+body {
+    font-family: 'myfont', sans-serif;
+    background-color: hsl(47, 88%, 63%);
+    color: black;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    border-radius: 15px;
+    padding: 1rem;
+    border: 1px solid black;
+    height: max-height;
+    width: calc(370px + 2rem);
+    background: white;
+    box-shadow: 8px 8px rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.image img {
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.content .type {
+    color: black;
+    font-weight: bold;
+    background: hsl(47, 88%, 63%);
+    padding: 0.7rem;
+    border-radius: 5px;
+    width: max-content;
+    margin: 10px 0
+}
+
+.content .date {
+    font-size: 15px;
+    line-height: 2;
+}
+
+.content .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 3;
+}
+
+.content .description {
+    margin-bottom: 20px;
+}
+
+.author img {
+    width: 35px;
+
+}
+
+.author {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
